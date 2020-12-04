@@ -1,0 +1,20 @@
+version: '3.8'
+
+x-setup: &SETUP
+    command: bash -c
+        "apt -qq update;
+        apt -qq upgrade -y >dev/null;  
+        apt -qq install figlet -y > dev/null;
+        figlet DevOps"
+    
+services:
+
+    ubuntu_2004:
+        <<: *SETUP
+        image: ubuntu:20.04
+    
+    ubuntu_2010:
+        <<: *SETUP
+        image: ubuntu:20.10
+
+    

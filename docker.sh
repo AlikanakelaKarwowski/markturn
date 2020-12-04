@@ -1,0 +1,1 @@
+docker run --workdir /build --mount type=bind,source="$(pwd)",target=/markturn,readonly -it ub10
