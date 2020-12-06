@@ -50,6 +50,7 @@ target_link_libraries(markturn_shared PUBLIC ${LIBXML2_LIBRARY} ${YAML_CPP_LIBRA
 install(TARGETS markturn_shared LIBRARY)
 
 # markturn test program
+include(CTest)
 enable_testing()
 file(GLOB TEST_SOURCES "test/*.cpp")
 foreach(TESTFILE ${TEST_SOURCES})
