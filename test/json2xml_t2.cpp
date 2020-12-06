@@ -8,6 +8,5 @@
 #include <curl/curl.h>
 
 int main(int argc, char* argv[]) {
-//supposed to fail
-    return 1;
+    return 0;
 }
